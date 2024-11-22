@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+    background-color: #EBEAFF;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #3D3BFF;
+    color: white;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #3D3BFF;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+section.contact-section {
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #e87373;
+}
+
+section.contact-section h1 {
+    color: #ff8383;
+    margin-bottom: 15px;
+}
+
+section.contact-section label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+section.contact-section input,
+section.contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+section.contact-section button {
+    padding: 10px 15px;
+    background-color: #3D3BFF;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section.contact-section button:hover {
+    background-color: #2A2AF3;
+}
+
+footer {
+    background-color: #3D3BFF;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 1024px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .about {
+        width: 90%;
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
